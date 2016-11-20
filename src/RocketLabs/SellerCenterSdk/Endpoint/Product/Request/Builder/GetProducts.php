@@ -85,6 +85,16 @@ class GetProducts extends ListRequestBuilderAbstract
     }
 
     /**
+     * @param string $skuList
+     * @return GetProducts
+     */
+    public function setSkuSellerList($skuSellerList)
+    {
+        $this->skuSellerList = $skuSellerList;
+        return $this;
+    }
+
+    /**
      * @param string $filter
      * @return GetProducts
      */

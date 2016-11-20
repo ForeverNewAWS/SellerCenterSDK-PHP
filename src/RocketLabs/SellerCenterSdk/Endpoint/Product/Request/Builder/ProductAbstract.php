@@ -111,6 +111,16 @@ abstract class ProductAbstract extends RequestBuilderAbstract
     protected $quantity;
 
     /**
+     * @var string
+     */
+    protected $productGroup;
+    
+    /**
+     * @var string. "Female" or "Unisex"
+     */
+    // protected $gender;
+
+    /**
      * @param string $sellerSku
      * @return static
      */
@@ -309,6 +319,26 @@ abstract class ProductAbstract extends RequestBuilderAbstract
         $this->quantity = $quantity;
         return $this;
     }
+
+    /**
+     * @param string $group
+     * @return static
+     */
+    public function setProductGroup($group)
+    {
+        $this->productGroup = $group;
+        return $this;
+    }    
+    
+    /**
+     * @param string $gender
+     * @return static
+     */
+//    public function setGender($gender)
+//    {
+//        $this->gender = $gender;
+//        return $this;
+//    } 
 
     /**
      * @return array
