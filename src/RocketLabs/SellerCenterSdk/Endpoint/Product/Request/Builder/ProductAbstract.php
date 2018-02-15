@@ -116,6 +116,12 @@ abstract class ProductAbstract extends RequestBuilderAbstract
     protected $productGroup;
     
     /**
+     * @var string
+     */
+    protected $skuSupplierConfig;
+       
+    
+    /**
      * @var string. "Female" or "Unisex"
      */
     // protected $gender;
@@ -339,6 +345,16 @@ abstract class ProductAbstract extends RequestBuilderAbstract
 //        $this->gender = $gender;
 //        return $this;
 //    } 
+    
+     /**
+     * @param string $group
+     * @return static
+     */
+    public function setSkuSupplierConfig($skuSupplierConfig)
+    {
+        $this->skuSupplierConfig = $skuSupplierConfig;
+        return $this;
+    }     
 
     /**
      * @return array
