@@ -114,11 +114,15 @@ abstract class ProductAbstract extends RequestBuilderAbstract
      * @var string
      */
     protected $productGroup;
-    
-    /**
-     * @var string
-     */
-    protected $skuSupplierConfig;
+
+
+// NB    
+// Random extra fields like these two belong in productData        
+//    
+//     /**
+//      * @var string
+//       */
+//     protected $skuSupplierConfig;
        
     
     /**
@@ -335,26 +339,19 @@ abstract class ProductAbstract extends RequestBuilderAbstract
         $this->productGroup = $group;
         return $this;
     }    
-    
-    /**
-     * @param string $gender
-     * @return static
-     */
+
+// NB    
+// Random extra fields like these two belong in productData        
 //    public function setGender($gender)
 //    {
 //        $this->gender = $gender;
 //        return $this;
 //    } 
-    
-     /**
-     * @param string $group
-     * @return static
-     */
-    public function setSkuSupplierConfig($skuSupplierConfig)
-    {
-        $this->skuSupplierConfig = $skuSupplierConfig;
-        return $this;
-    }     
+//     public function setSkuSupplierConfig($skuSupplierConfig)
+//     {
+//         $this->skuSupplierConfig = $skuSupplierConfig;
+//         return $this;
+//     }     
 
     /**
      * @return array
